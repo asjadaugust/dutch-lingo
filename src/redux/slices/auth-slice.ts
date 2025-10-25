@@ -25,10 +25,8 @@ export const loginAsync = createAsyncThunk(
   'auth/login',
   async ({ email, password }: { email: string; password: string }, { rejectWithValue }) => {
     try {
-      // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 500));
       
-      // Mock successful login
       if (email === 'test@example.com' && password === 'Test123!') {
         return {
           id: '1',
@@ -40,6 +38,36 @@ export const loginAsync = createAsyncThunk(
       throw new Error('Invalid credentials');
     } catch (error) {
       return rejectWithValue('Invalid email or password');
+    }
+  }
+);
+
+// Mock signup
+export const signupAsync = createAsyncThunk(
+  'auth/signup',
+  async (
+    { name, email, password }: { name: string; email: string; password: string },
+    { rejectWithValue }
+  ) => {
+    try {
+      await new Promise(resolve => setTimeout(resolve, 800));
+      
+      // Check if email already exists
+      if (email === 'test@example.com') {
+        throw new Error('Email already in use');
+      }
+      
+      // Mock successful signup
+      return {
+        id: Math.random().toString(36).substr(2, 9),
+        email,
+        displayName: name,
+      };
+    } catch (error) {
+      if (error instanceof Error && error.message === 'Email already in use') {
+        return rejectWithValue('Email already in use');
+      }
+      return rejectWithValue('Failed to create account');
     }
   }
 );
@@ -59,6 +87,7 @@ const authSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
+      // Login
       .addCase(loginAsync.pending, (state) => {
         state.isLoading = true;
         state.error = null;
@@ -70,6 +99,22 @@ const authSlice = createSlice({
         state.error = null;
       })
       .addCase(loginAsync.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.payload as string;
+        state.isAuthenticated = false;
+      })
+      // Signup
+      .addCase(signupAsync.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+      .addCase(signupAsync.fulfilled, (state, action: PayloadAction<User>) => {
+        state.isLoading = false;
+        state.user = action.payload;
+        state.isAuthenticated = true;
+        state.error = null;
+      })
+      .addCase(signupAsync.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.payload as string;
         state.isAuthenticated = false;
