@@ -1,4 +1,4 @@
-import { Word, WordCategory, DifficultyLevel, PartOfSpeech } from '../types/models';
+import { Word, WordCategory, DifficultyLevel } from '../types/models';
 
 export const sampleWords: Word[] = [
   // Greetings
@@ -8,8 +8,8 @@ export const sampleWords: Word[] = [
     english: 'Hello',
     category: WordCategory.GREETINGS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.INTERJECTION,
-    exampleSentence: 'Hallo, hoe gaat het met je?',
+    exampleDutch: 'Hallo, hoe gaat het met je?',
+    exampleEnglish: 'Hello, how are you?',
   },
   {
     id: '2',
@@ -17,8 +17,8 @@ export const sampleWords: Word[] = [
     english: 'Good morning',
     category: WordCategory.GREETINGS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.INTERJECTION,
-    exampleSentence: 'Goedemorgen! Heb je goed geslapen?',
+    exampleDutch: 'Goedemorgen! Heb je goed geslapen?',
+    exampleEnglish: 'Good morning! Did you sleep well?',
   },
   {
     id: '3',
@@ -26,8 +26,8 @@ export const sampleWords: Word[] = [
     english: 'Thank you',
     category: WordCategory.GREETINGS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.INTERJECTION,
-    exampleSentence: 'Dank je wel voor je hulp!',
+    exampleDutch: 'Dank je wel voor je hulp!',
+    exampleEnglish: 'Thank you for your help!',
   },
   {
     id: '4',
@@ -35,8 +35,9 @@ export const sampleWords: Word[] = [
     english: 'Goodbye',
     category: WordCategory.GREETINGS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.INTERJECTION,
-    exampleSentence: 'Tot ziens! Tot morgen!',
+    
+    exampleDutch: 'Tot ziens! Tot morgen!',
+    exampleEnglish: 'Goodbye! See you tomorrow!',
   },
   {
     id: '5',
@@ -44,8 +45,9 @@ export const sampleWords: Word[] = [
     english: 'Please / Here you are',
     category: WordCategory.GREETINGS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.ADVERB,
-    exampleSentence: 'Mag ik een koffie, alstublieft?',
+    
+    exampleDutch: 'Mag ik een koffie, alstublieft?',
+    exampleEnglish: 'May I have a coffee, please?',
   },
 
   // Numbers  
@@ -55,8 +57,9 @@ export const sampleWords: Word[] = [
     english: 'One',
     category: WordCategory.NUMBERS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Ik heb een hond.',
+    
+    exampleDutch: 'Ik heb een hond.',
+    exampleEnglish: 'I have a dog.',
   },
   {
     id: '7',
@@ -64,8 +67,9 @@ export const sampleWords: Word[] = [
     english: 'Two',
     category: WordCategory.NUMBERS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Ik heb twee katten.',
+    
+    exampleDutch: 'Ik heb twee katten.',
+    exampleEnglish: 'I have two cats.',
   },
   {
     id: '8',
@@ -73,8 +77,8 @@ export const sampleWords: Word[] = [
     english: 'Three',
     category: WordCategory.NUMBERS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Er zijn drie appels op tafel.',
+    
+    exampleDutch: 'Er zijn drie appels op tafel.',
   },
   {
     id: '9',
@@ -82,8 +86,8 @@ export const sampleWords: Word[] = [
     english: 'Four',
     category: WordCategory.NUMBERS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Ik heb vier vingers op elke hand.',
+    
+    exampleDutch: 'Ik heb vier vingers op elke hand.',
   },
   {
     id: '10',
@@ -91,8 +95,8 @@ export const sampleWords: Word[] = [
     english: 'Five',
     category: WordCategory.NUMBERS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'De winkel sluit om vijf uur.',
+    
+    exampleDutch: 'De winkel sluit om vijf uur.',
   },
 
   // Colors
@@ -102,8 +106,8 @@ export const sampleWords: Word[] = [
     english: 'Red',
     category: WordCategory.COLORS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.ADJECTIVE,
-    exampleSentence: 'De appel is rood.',
+    
+    exampleDutch: 'De appel is rood.',
   },
   {
     id: '12',
@@ -111,8 +115,8 @@ export const sampleWords: Word[] = [
     english: 'Blue',
     category: WordCategory.COLORS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.ADJECTIVE,
-    exampleSentence: 'De lucht is blauw.',
+    
+    exampleDutch: 'De lucht is blauw.',
   },
   {
     id: '13',
@@ -120,8 +124,8 @@ export const sampleWords: Word[] = [
     english: 'Green',
     category: WordCategory.COLORS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.ADJECTIVE,
-    exampleSentence: 'Het gras is groen.',
+    
+    exampleDutch: 'Het gras is groen.',
   },
   {
     id: '14',
@@ -129,8 +133,8 @@ export const sampleWords: Word[] = [
     english: 'Yellow',
     category: WordCategory.COLORS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.ADJECTIVE,
-    exampleSentence: 'De zon is geel.',
+    
+    exampleDutch: 'De zon is geel.',
   },
   {
     id: '15',
@@ -138,8 +142,8 @@ export const sampleWords: Word[] = [
     english: 'White',
     category: WordCategory.COLORS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.ADJECTIVE,
-    exampleSentence: 'De sneeuw is wit.',
+    
+    exampleDutch: 'De sneeuw is wit.',
   },
 
   // Food
@@ -149,8 +153,8 @@ export const sampleWords: Word[] = [
     english: 'Bread',
     category: WordCategory.FOOD,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Ik eet brood met boter.',
+    
+    exampleDutch: 'Ik eet brood met boter.',
   },
   {
     id: '17',
@@ -158,8 +162,8 @@ export const sampleWords: Word[] = [
     english: 'Cheese',
     category: WordCategory.FOOD,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Nederlandse kaas is heerlijk!',
+    
+    exampleDutch: 'Nederlandse kaas is heerlijk!',
   },
   {
     id: '18',
@@ -167,8 +171,8 @@ export const sampleWords: Word[] = [
     english: 'Milk',
     category: WordCategory.FOOD,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Ik drink melk bij het ontbijt.',
+    
+    exampleDutch: 'Ik drink melk bij het ontbijt.',
   },
   {
     id: '19',
@@ -176,8 +180,8 @@ export const sampleWords: Word[] = [
     english: 'Water',
     category: WordCategory.FOOD,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Mag ik een glas water?',
+    
+    exampleDutch: 'Mag ik een glas water?',
   },
   {
     id: '20',
@@ -185,8 +189,8 @@ export const sampleWords: Word[] = [
     english: 'Coffee',
     category: WordCategory.FOOD,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Ik drink graag koffie in de ochtend.',
+    
+    exampleDutch: 'Ik drink graag koffie in de ochtend.',
   },
 
   // Family
@@ -196,8 +200,8 @@ export const sampleWords: Word[] = [
     english: 'Mother',
     category: WordCategory.FAMILY,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Mijn moeder is lerares.',
+    
+    exampleDutch: 'Mijn moeder is lerares.',
   },
   {
     id: '22',
@@ -205,8 +209,8 @@ export const sampleWords: Word[] = [
     english: 'Father',
     category: WordCategory.FAMILY,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Mijn vader werkt in een kantoor.',
+    
+    exampleDutch: 'Mijn vader werkt in een kantoor.',
   },
   {
     id: '23',
@@ -214,8 +218,8 @@ export const sampleWords: Word[] = [
     english: 'Brother',
     category: WordCategory.FAMILY,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Ik heb een oudere broer.',
+    
+    exampleDutch: 'Ik heb een oudere broer.',
   },
   {
     id: '24',
@@ -223,8 +227,8 @@ export const sampleWords: Word[] = [
     english: 'Sister',
     category: WordCategory.FAMILY,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Mijn zus studeert aan de universiteit.',
+    
+    exampleDutch: 'Mijn zus studeert aan de universiteit.',
   },
   {
     id: '25',
@@ -232,8 +236,8 @@ export const sampleWords: Word[] = [
     english: 'Child',
     category: WordCategory.FAMILY,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Het kind speelt in de tuin.',
+    
+    exampleDutch: 'Het kind speelt in de tuin.',
   },
 
   // House
@@ -243,8 +247,8 @@ export const sampleWords: Word[] = [
     english: 'House',
     category: WordCategory.HOUSE,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Ons huis heeft een grote tuin.',
+    
+    exampleDutch: 'Ons huis heeft een grote tuin.',
   },
   {
     id: '27',
@@ -252,8 +256,8 @@ export const sampleWords: Word[] = [
     english: 'Door',
     category: WordCategory.HOUSE,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Sluit de deur alstublieft.',
+    
+    exampleDutch: 'Sluit de deur alstublieft.',
   },
   {
     id: '28',
@@ -261,8 +265,8 @@ export const sampleWords: Word[] = [
     english: 'Window',
     category: WordCategory.HOUSE,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Open het raam, het is warm.',
+    
+    exampleDutch: 'Open het raam, het is warm.',
   },
   {
     id: '29',
@@ -270,8 +274,8 @@ export const sampleWords: Word[] = [
     english: 'Table',
     category: WordCategory.HOUSE,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'De tafel staat in de woonkamer.',
+    
+    exampleDutch: 'De tafel staat in de woonkamer.',
   },
   {
     id: '30',
@@ -279,8 +283,8 @@ export const sampleWords: Word[] = [
     english: 'Chair',
     category: WordCategory.HOUSE,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Ga zitten op een stoel.',
+    
+    exampleDutch: 'Ga zitten op een stoel.',
   },
 
   // Common verbs
@@ -290,8 +294,8 @@ export const sampleWords: Word[] = [
     english: 'To be',
     category: WordCategory.WORK,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.VERB,
-    exampleSentence: 'Ik ben student.',
+    
+    exampleDutch: 'Ik ben student.',
   },
   {
     id: '32',
@@ -299,8 +303,8 @@ export const sampleWords: Word[] = [
     english: 'To have',
     category: WordCategory.WORK,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.VERB,
-    exampleSentence: 'Ik heb een auto.',
+    
+    exampleDutch: 'Ik heb een auto.',
   },
   {
     id: '33',
@@ -308,8 +312,8 @@ export const sampleWords: Word[] = [
     english: 'To go',
     category: WordCategory.WORK,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.VERB,
-    exampleSentence: 'Ik ga naar school.',
+    
+    exampleDutch: 'Ik ga naar school.',
   },
   {
     id: '34',
@@ -317,8 +321,8 @@ export const sampleWords: Word[] = [
     english: 'To come',
     category: WordCategory.WORK,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.VERB,
-    exampleSentence: 'Hij komt morgen.',
+    
+    exampleDutch: 'Hij komt morgen.',
   },
   {
     id: '35',
@@ -326,8 +330,8 @@ export const sampleWords: Word[] = [
     english: 'To make',
     category: WordCategory.WORK,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.VERB,
-    exampleSentence: 'Ik maak mijn huiswerk.',
+    
+    exampleDutch: 'Ik maak mijn huiswerk.',
   },
 
   // Animals
@@ -337,8 +341,8 @@ export const sampleWords: Word[] = [
     english: 'Dog',
     category: WordCategory.ANIMALS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Onze hond heet Max.',
+    
+    exampleDutch: 'Onze hond heet Max.',
   },
   {
     id: '37',
@@ -346,8 +350,8 @@ export const sampleWords: Word[] = [
     english: 'Cat',
     category: WordCategory.ANIMALS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'De kat slaapt op de bank.',
+    
+    exampleDutch: 'De kat slaapt op de bank.',
   },
   {
     id: '38',
@@ -355,8 +359,8 @@ export const sampleWords: Word[] = [
     english: 'Bird',
     category: WordCategory.ANIMALS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'De vogel zingt in de boom.',
+    
+    exampleDutch: 'De vogel zingt in de boom.',
   },
   {
     id: '39',
@@ -364,8 +368,8 @@ export const sampleWords: Word[] = [
     english: 'Fish',
     category: WordCategory.ANIMALS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'We eten vis vanavond.',
+    
+    exampleDutch: 'We eten vis vanavond.',
   },
   {
     id: '40',
@@ -373,8 +377,8 @@ export const sampleWords: Word[] = [
     english: 'Horse',
     category: WordCategory.ANIMALS,
     difficulty: DifficultyLevel.BEGINNER,
-    partOfSpeech: PartOfSpeech.NOUN,
-    exampleSentence: 'Het paard rent snel.',
+    
+    exampleDutch: 'Het paard rent snel.',
   },
 ];
 

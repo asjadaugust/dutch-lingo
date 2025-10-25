@@ -46,7 +46,7 @@ export const loginAsync = createAsyncThunk(
 export const signupAsync = createAsyncThunk(
   'auth/signup',
   async (
-    { name, email, password }: { name: string; email: string; password: string },
+    { name, email }: { name: string; email: string; password: string },
     { rejectWithValue }
   ) => {
     try {

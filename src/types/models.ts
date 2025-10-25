@@ -6,11 +6,12 @@ export interface Word {
   english: string;
   category: WordCategory;
   difficulty: DifficultyLevel;
-  partOfSpeech: PartOfSpeech;
-  exampleSentence?: string;
+  exampleDutch?: string;
+  exampleEnglish?: string;
   pronunciation?: string;
   imageUrl?: string;
   audioUrl?: string;
+  notes?: string; // For plural forms, conjugations, etc.
 }
 
 export enum WordCategory {
@@ -34,23 +35,14 @@ export enum WordCategory {
   SPORTS = 'sports',
   HOBBIES = 'hobbies',
   EMOTIONS = 'emotions',
+  VERBS = 'verbs',
+  COMMON = 'common',
 }
 
 export enum DifficultyLevel {
   BEGINNER = 'beginner',
   INTERMEDIATE = 'intermediate',
   ADVANCED = 'advanced',
-}
-
-export enum PartOfSpeech {
-  NOUN = 'noun',
-  VERB = 'verb',
-  ADJECTIVE = 'adjective',
-  ADVERB = 'adverb',
-  PRONOUN = 'pronoun',
-  PREPOSITION = 'preposition',
-  CONJUNCTION = 'conjunction',
-  INTERJECTION = 'interjection',
 }
 
 // User progress for each word
