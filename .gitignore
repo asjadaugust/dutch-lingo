@@ -1,0 +1,42 @@
+# OSX
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React Native
+.expo/
+.expo-shared/
+
+# Environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+coverage/
+test-results/
+playwright-report/
+.playwright/
+
+# Documentation (GITIGNORED as per instructions)
+docs/
+
+# Build
+dist/
+build/
+
+# Misc
+.vscode/
+.idea/
+*.log
+*.swp
+*.swo
+*~
+
+# Package manager
+package-lock.json
+yarn.lock

@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: dutch-lingo-db
+    environment:
+      POSTGRES_DB: vocab_app
+      POSTGRES_USER: vocab_user
+      POSTGRES_PASSWORD: local_dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - vocab-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U vocab_user -d vocab_app"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  vocab-network:
+    driver: bridge
