@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { LoginScreen } from './screens/auth/login-screen';
 import { SignupScreen } from './screens/auth/signup-screen';
+import { ForgotPasswordScreen } from './screens/auth/forgot-password-screen';
 import { HomeScreen } from './screens/home/home-screen';
 import { WelcomeScreen } from './screens/onboarding/welcome-screen';
 import { useAppSelector } from './redux/store';
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginScreen />} />
           <Route path="/signup" element={<SignupScreen />} />
+          <Route path="/forgot-password" element={<ForgotPasswordScreen />} />
           <Route path="/onboarding" element={
             <ProtectedRoute>
               <WelcomeScreen />
@@ -40,13 +42,6 @@ function App() {
             </ProtectedRoute>
           } />
           <Route path="/" element={<Navigate to="/login" replace />} />
-          <Route path="/forgot-password" element={
-            <div style={{ padding: '2rem', textAlign: 'center' }}>
-              <h1>Forgot Password</h1>
-              <p>Coming soon...</p>
-              <a href="/login">Back to Login</a>
-            </div>
-          } />
         </Routes>
       </div>
     </Router>
