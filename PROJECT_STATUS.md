@@ -304,3 +304,20 @@ DB_PASSWORD=local_dev_password
 **Ready to build! 🚀**
 
 Let's create an amazing Dutch vocabulary learning app using test-driven development and best practices.
+
+---
+
+## 📝 Recent Updates
+
+### October 25, 2025 - Phase 1: Module 1.2 Complete
+
+**Feature: User Login** ✅
+
+Implemented full authentication login flow following TDD principles.
+
+**Branch:** `feature/auth-login`  
+**PR:** Ready for review
+
+**Test Results:** All Playwright tests passing ✅
+
+**Next:** Module 1.3 - Signup Screen
